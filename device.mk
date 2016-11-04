@@ -166,6 +166,10 @@ PRODUCT_PACKAGES += \
 TARGET_RECOVERY_DEVICE_MODULES += \
     rm-wrapper
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_wvm
+
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
