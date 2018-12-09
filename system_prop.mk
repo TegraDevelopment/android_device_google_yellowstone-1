@@ -15,6 +15,12 @@
 
 ### System Properties for yellowstone
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapgrowthlimit=28m \
+    dalvik.vm.heapsize=448m \
+    dalvik.vm.heapstartsize=12m
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.override_null_lcd_density=1
