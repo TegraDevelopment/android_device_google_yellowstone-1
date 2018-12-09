@@ -91,6 +91,22 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     power.tegra
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.yellowstone \
+    init.hdcp.rc \
+    init.icera.rc \
+    init.icera.common.rc \
+    init.icera.tablet.rc \
+    init.nv_dev_board.usb.rc \
+    init.t124.rc \
+    init.t124_emmc.rc \
+    init.tlk.rc \
+    init.trace.rc \
+    init.usb.rc \
+    init.yellowstone.rc \
+    ueventd.yellowstone.rc
+
 # Renderscript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
