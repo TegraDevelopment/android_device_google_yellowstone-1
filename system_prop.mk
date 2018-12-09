@@ -32,9 +32,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GL
 # Use glcomposer as the default compositor
+# Don't preload OpenGL in Zygote, the Tegra drivers do not like it
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.tegra.compositor=glcomposer \
-    ro.opengles.version=196608
+    ro.opengles.version=196608 \
+    ro.zygote.disable_gl_preload=true
 
 # HWUI Parameters
 PRODUCT_PROPERTY_OVERRIDES += \
