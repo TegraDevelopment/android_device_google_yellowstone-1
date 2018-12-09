@@ -249,6 +249,9 @@ on boot
 # Wifi support rx-filter
     setprop wifi.rx-filter 1
 
+# Use the group Wi-Fi Direct interface on bcm43xx
+    setprop wifi.direct.interface p2p-dev-wlan0
+
 # TLK storage service
 import init.tlk.rc
 
