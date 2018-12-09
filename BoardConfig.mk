@@ -30,6 +30,11 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 # Board
 TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
+BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 debug_uartport=lsport,3 no_console_suspend=1 usbcore.old_scheme_first=1
+
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/google/yellowstone
+TARGET_KERNEL_CONFIG := yellowstone_defconfig
 
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
