@@ -53,6 +53,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.tegra.nvmmlite=1
 
+# Stagefright (Legacy)
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
+
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.nv.usb.pid.mtp.adb=4D02 \
