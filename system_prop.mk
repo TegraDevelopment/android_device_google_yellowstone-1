@@ -33,7 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GL
 # Use glcomposer as the default compositor
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.tegra.compositor=glcomposer
+    persist.tegra.compositor=glcomposer \
+    ro.opengles.version=196608
 
 # HWUI Parameters
 PRODUCT_PROPERTY_OVERRIDES += \
