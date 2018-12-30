@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_kernel_google_yellowstone",
+    "target_path": "kernel/google/yellowstone"
+    "revision": "lineage-16.0" 
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_nvidia_libstagefrighthw",
+    "target_path": "hardware/nvidia/linbstagefrighthw"
+    "revision": "lineage-16.0"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_nvidia_power",
+    "target_path": "hardware/nvidia/power"
+    "revision": "lineage-16.0"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_nvidia_sensors",
+    "target_path": "hardware/nvidia/sensors"
+    "revision": "lineage-16.0"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_hardware_nvidia_thermal",
+    "target_path": "hardware/nvidia/thermal"
+    "revision": "lineage-16.0"
+  }
+] 
