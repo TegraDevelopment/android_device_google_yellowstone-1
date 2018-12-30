@@ -7,23 +7,22 @@ vendor/lib/libnvavp.so
 # Camera
 etc/model_frontal.xml
 lib/libopencv24_tegra.so
-vendor/lib/hw/camera.tegra.so
+lib/libtbb.so
+lib/hw/camera.tegra.so
 vendor/lib/libnvcam_imageencoder.so
 vendor/lib/libnvcamerahdr_v3.so
 vendor/lib/libnvcameratools.so
 vendor/lib/libnvcontrol_jni.so
 vendor/lib/libnvisp_v3.so
 vendor/lib/libnvmm_camera_v3.so
-vendor/lib/libtbb.so
 
 # Firmware
-vendor/firmware/BCM43341NFCB0_002.001.009.0031.0059_Generic_I2C_NCD_Signed_configdata.ncd
-vendor/firmware/BCM43341NFCB0_002.001.009.0031.0059_Generic_PreI2C_NCD_Signed_configdata.._.ncd
-vendor/firmware/fw_bcmdhd.bin
-vendor/firmware/fw_bcmdhd_a0.bin
-vendor/firmware/fw_bcmdhd_apsta.bin
-vendor/firmware/fw_bcmdhd_p2p.bin
-vendor/firmware/fw_bcm4330/fw_bcmdhd.bin
+vendor/firmware/bcm43341/BCM43341NFCB0_002.001.009.0031.0059_Generic_I2C_NCD_Signed_configdata.ncd
+vendor/firmware/bcm43341/BCM43341NFCB0_002.001.009.0031.0059_Generic_PreI2C_NCD_Signed_configdata.._.ncd
+vendor/firmware/bcm43341/fw_bcmdhd.bin
+vendor/firmware/bcm43341/fw_bcmdhd_a0.bin
+vendor/firmware/bcm43341/fw_bcmdhd_apsta.bin
+vendor/firmware/bcm43341/fw_bcmdhd_p2p.bin
 vendor/firmware/icera/loader.wrapped
 vendor/firmware/icera/modem.wrapped
 vendor/firmware/icera/nvidia-e1729/productConfig.bin
@@ -38,10 +37,10 @@ bin/glgps_nvidiaTegra2android
 lib/hw/gps.brcm.so
 
 # Graphics
-lib/hw/gralloc.tegra.so
-vendor/lib/egl/libEGL_tegra.so
-vendor/lib/egl/libGLESv1_CM_tegra.so
-vendor/lib/egl/libGLESv2_tegra.so
+lib/egl/libEGL_tegra.so
+lib/egl/libGLESv1_CM_tegra.so
+lib/egl/libGLESv2_tegra.so
+vendor/lib/hw/gralloc.tegra.so
 vendor/lib/hw/hwcomposer.tegra.so
 vendor/lib/libglcore.so
 vendor/lib/libnvblit.so
@@ -50,7 +49,6 @@ vendor/lib/libnvddk_vic.so
 vendor/lib/libnvglsi.so
 vendor/lib/libnvgr.so
 vendor/lib/libnvrm.so
-vendor/lib/libnvrm_gpu.so
 vendor/lib/libnvrm_graphics.so
 vendor/lib/libnvrmapi_tegra.so
 vendor/lib/libnvtnr.so
@@ -64,7 +62,7 @@ etc/hdcpsrm/hdcp2x.srm
 etc/hdcpsrm/hdcp2xtest.srm
 
 # Keystore
-vendor/lib/hw/keystore.tegra.so
+lib/hw/keystore.tegra.so
 
 # Media
 vendor/lib/libnvmm.so
@@ -80,10 +78,10 @@ vendor/lib/libnvmmlite_image.so
 vendor/lib/libnvmmlite_utils.so
 vendor/lib/libnvmmlite_video.so
 vendor/lib/libnvodm_dtvtuner.so
-vnedor/lib/libnvodm_hdmi.so
+vendor/lib/libnvodm_hdmi.so
 vendor/lib/libnvodm_imager.so
-vnedor/lib/libnvodm_misc.so
-vnedor/lib/libnvodm_query.so
+vendor/lib/libnvodm_misc.so
+vendor/lib/libnvodm_query.so
 vendor/lib/libnvomx.so
 vendor/lib/libnvomxadaptor.so
 vendor/lib/libnvomxilclient.so
@@ -102,13 +100,13 @@ vendor/bin/icera-switcherd
 vendor/lib/libril-icera.so
 
 # Sensor
-vendor/lib/libmplmpu.so
-vendor/lib/libsensors.iio.lights.so
-vendor/lib/libsensors.isl29018.so
-vendor/lib/libsensors.isl29028.so
-vendor/lib/libsensors.mpl.so
-vendor/lib/libsensors.nvs_input.so
-vendor/lib/libsensorservice.so
+lib/libmplmpu.so
+lib/libsensors.iio.lights.so
+lib/libsensors.isl29018.so
+lib/libsensors.isl29028.so
+lib/libsensors.mpl.so
+lib/libsensors.nvs_input.so
+lib/libsensorservice.so
 
 # Touchscreen (Raydium)
 bin/rm_ts_server
@@ -125,12 +123,13 @@ lib/para_10_04_00_10.so
 lib/para_10_04_00_20.so
 lib/para_10_04_00_b0.so
 lib/para_10_04_00_c0.so
-lib/para_10_05_00_b0.so
+lib/para_10_05_00_c0.so
 lib/para_10_06_00_b0.so
 lib/para_10_07_00_b0.so
 lib/para_10_08_00_10.so
 lib/para_10_08_00_20.so
 lib/para_10_08_00_b0.so
+lib/para_10_09_00_c0.so
 lib/para_10_09_01_c0.so
 lib/para_10_09_02_c0.so
 lib/para_10_0A_00_b0.so
