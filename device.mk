@@ -30,6 +30,9 @@ PRODUCT_PACKAGES += \
     tinyplay \
     xaplay
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/enctune.conf:system/etc/enctune.conf
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
@@ -40,6 +43,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@1.0-impl \
     Snap
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/camera/nvcamera.conf:system/etc/nvcamera.conf
 
 # Display
 PRODUCT_PACKAGES += \
@@ -58,6 +64,9 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/gpsconfig.xml:system/etc/gps/gpsconfig.xml
 
 # Health HAL
 PRODUCT_PACKAGES += \
