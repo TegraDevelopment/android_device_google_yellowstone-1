@@ -135,3 +135,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
     wificond
+
+$(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
+
