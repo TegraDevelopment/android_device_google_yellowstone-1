@@ -32,6 +32,9 @@ TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
 BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 debug_uartport=lsport,3 no_console_suspend=1 usbcore.old_scheme_first=1
 
+# Graphics
+SF_VSYNC_EVENT_PHASE_OFFSET_NS := 1
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/google/yellowstone
 TARGET_KERNEL_CONFIG := yellowstone_defconfig
