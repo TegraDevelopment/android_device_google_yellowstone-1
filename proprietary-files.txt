@@ -1,0 +1,163 @@
+# Audio
+lib/libnvoice.so
+lib/hw/audio.primary.tegra.so
+vendor/lib/libnvaudioservice.so
+vendor/lib/libnvavp.so
+
+# Camera
+etc/model_frontal.xml
+lib/libopencv24_tegra.so
+vendor/lib/hw/camera.tegra.so
+vendor/lib/libnvcam_imageencoder.so
+vendor/lib/libnvcamerahdr_v3.so
+vendor/lib/libnvcameratools.so
+vendor/lib/libnvcontrol_jni.so
+vendor/lib/libnvisp_v3.so
+vendor/lib/libnvmm_camera_v3.so
+vendor/lib/libtbb.so
+
+# Firmware
+vendor/firmware/BCM43341NFCB0_002.001.009.0031.0059_Generic_I2C_NCD_Signed_configdata.ncd
+vendor/firmware/BCM43341NFCB0_002.001.009.0031.0059_Generic_PreI2C_NCD_Signed_configdata.._.ncd
+vendor/firmware/fw_bcmdhd.bin
+vendor/firmware/fw_bcmdhd_a0.bin
+vendor/firmware/fw_bcmdhd_apsta.bin
+vendor/firmware/fw_bcmdhd_p2p.bin
+vendor/firmware/fw_bcm4330/fw_bcmdhd.bin
+vendor/firmware/icera/loader.wrapped
+vendor/firmware/icera/modem.wrapped
+vendor/firmware/icera/nvidia-e1729/productConfig.bin
+vendor/firmware/icera/nvidia-e1729-nala/productConfig.bin
+vendor/firmware/icera/secondary_boot.wrapped
+vendor/firmware/maxim_fp35.bin
+vendor/firmware/touch_fusion.cfg
+
+# GPS (Broadcom)
+bin/gps_select.sh
+bin/glgps_nvidiaTegra2android
+lib/hw/gps.brcm.so
+
+# Graphics
+lib/hw/gralloc.tegra.so
+vendor/lib/egl/libEGL_tegra.so
+vendor/lib/egl/libGLESv1_CM_tegra.so
+vendor/lib/egl/libGLESv2_tegra.so
+vendor/lib/hw/hwcomposer.tegra.so
+vendor/lib/libglcore.so
+vendor/lib/libnvblit.so
+vendor/lib/libnvddk_2d_v2.so
+vendor/lib/libnvddk_vic.so
+vendor/lib/libnvglsi.so
+vendor/lib/libnvgr.so
+vendor/lib/libnvrm.so
+vendor/lib/libnvrm_gpu.so
+vendor/lib/libnvrm_graphics.so
+vendor/lib/libnvrmapi_tegra.so
+vendor/lib/libnvtnr.so
+vendor/lib/libnvtvmr.so
+vendor/lib/libnvvicsi_v3.so
+vendor/lib/libnvwsi.so
+
+# HDCP
+etc/hdcpsrm/hdcp1x.srm
+etc/hdcpsrm/hdcp2x.srm
+etc/hdcpsrm/hdcp2xtest.srm
+
+# Keystore
+vendor/lib/hw/keystore.tegra.so
+
+# Media
+vendor/lib/libnvmm.so
+vendor/lib/libnvmm_audio.so
+vendor/lib/libnvmm_camera_v3.so
+vendor/lib/libnvmm_contentpipe.so
+vendor/lib/libnvmm_parser.so
+vendor/lib/libnvmm_utils.so
+vendor/lib/libnvmm_writer.so
+vendor/lib/libnvmmlite.so
+vendor/lib/libnvmmlite_audio.so
+vendor/lib/libnvmmlite_image.so
+vendor/lib/libnvmmlite_utils.so
+vendor/lib/libnvmmlite_video.so
+vendor/lib/libnvodm_dtvtuner.so
+vnedor/lib/libnvodm_hdmi.so
+vendor/lib/libnvodm_imager.so
+vnedor/lib/libnvodm_misc.so
+vnedor/lib/libnvodm_query.so
+vendor/lib/libnvomx.so
+vendor/lib/libnvomxadaptor.so
+vendor/lib/libnvomxilclient.so
+vendor/lib/libnvparser.so
+
+# Miscellaneous
+vendor/lib/libnvcpl.so
+vendor/lib/libphs.so
+
+# NVOS
+vendor/lib/libnvos.so
+
+# RIL (Icera)
+vendor/bin/downloader
+vendor/bin/icera-switcherd
+vendor/lib/libril-icera.so
+
+# Sensor
+vendor/lib/libmplmpu.so
+vendor/lib/libsensors.iio.lights.so
+vendor/lib/libsensors.isl29018.so
+vendor/lib/libsensors.isl29028.so
+vendor/lib/libsensors.mpl.so
+vendor/lib/libsensors.nvs_input.so
+vendor/lib/libsensorservice.so
+
+# Touchscreen (Raydium)
+bin/rm_ts_server
+lib/hw/ts.default.so
+lib/librm31080.so
+lib/librm_ts_service.so
+lib/para_10_02_00_10.so
+lib/para_10_02_00_20.so
+lib/para_10_02_00_b0.so
+lib/para_10_03_00_10.so
+lib/para_10_03_00_20.so
+lib/para_10_03_00_b0.so
+lib/para_10_04_00_10.so
+lib/para_10_04_00_20.so
+lib/para_10_04_00_b0.so
+lib/para_10_04_00_c0.so
+lib/para_10_05_00_b0.so
+lib/para_10_06_00_b0.so
+lib/para_10_07_00_b0.so
+lib/para_10_08_00_10.so
+lib/para_10_08_00_20.so
+lib/para_10_08_00_b0.so
+lib/para_10_09_01_c0.so
+lib/para_10_09_02_c0.so
+lib/para_10_0A_00_b0.so
+lib/para_12_01_00_a0.so
+lib/para_12_01_01_a0.so
+lib/para_12_01_02_a0.so
+lib/para_12_01_03_a0.so
+
+# Trusted Little Kernel
+vendor/bin/tlk_daemon
+vendor/lib/libtlk_secure_hdcp_up.so
+vendor/lib/libtsec_wrapper.so
+vendor/lib/libtsechdcp.so
+
+# Unified Scaling Service
+vendor/bin/ussrd
+vendor/lib/libgov_boot.so
+vendor/lib/libgov_camera.so
+vendor/lib/libgov_combinator.so
+vendor/lib/libgov_force.so
+vendor/lib/libgov_generic.so
+vendor/lib/libgov_gpucompute.so
+vendor/lib/libgov_graphics.so
+vendor/lib/libgov_il.so
+vendor/lib/libgov_spincircle.so
+vendor/lib/libgov_tbc.so
+vendor/lib/libussrd.so
+
+# Widevine
+vendor/lib/mediadrm/libwvdrmengine.so
