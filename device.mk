@@ -72,6 +72,10 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayouts/raydium_ts.idc:system/usr/idc/raydium_ts.idc
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.tegra
+
 # NFC packages
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
