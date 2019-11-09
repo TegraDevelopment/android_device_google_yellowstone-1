@@ -33,7 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Don't preload OpenGL in Zygote, the Tegra drivers do not like it
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.tegra.compositor=glcomposer \
-    ro.opengles.version=196608 \
+    ro.opengles.version=196610 \
     ro.zygote.disable_gl_preload=true
 
 # NVMM
