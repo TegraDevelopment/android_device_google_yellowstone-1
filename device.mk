@@ -13,11 +13,41 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler \
+    libaudiospdif \
+    libstagefrighthw \
+    libtinyalsa \
+    libtinycompress \
+    tinycap \
+    tinymix \
+    tinyplay \
+    xaplay
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 
 # HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+
+# NFC packages
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    nfc_nci.bcm2079x.default \
+    NfcNci \
+    Tag
+
+# Power
+PRODUCT_PACKAGES += \
+    power.tegra
 
 # RemovePackages
 PRODUCT_PACKAGES += \
@@ -25,3 +55,13 @@ PRODUCT_PACKAGES += \
 
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
+
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.tegra
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
