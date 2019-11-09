@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/google/yellowstone
 
+# Local header includes
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon

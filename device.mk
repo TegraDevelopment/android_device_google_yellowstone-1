@@ -64,6 +64,10 @@ PRODUCT_COPY_FILES += \
 # HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
+# Keylayouts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayouts/raydium_ts.idc:system/usr/idc/raydium_ts.idc
+
 # NFC packages
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -141,6 +145,10 @@ PRODUCT_PACKAGES += \
 # RemovePackages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# RM-Wrapper
+TARGET_RECOVERY_DEVICE_MODULES += \
+    rm-wrapper
 
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
