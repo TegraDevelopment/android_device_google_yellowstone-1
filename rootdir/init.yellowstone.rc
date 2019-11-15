@@ -8,6 +8,7 @@
 
 import init.t124_emmc.rc
 import init.mmap_topdown.rc
+import init.ussrd.rc 
 
 on fs
     setprop ro.crypto.tmpfs_options size=128m,mode=0771,uid=1000,gid=1000
@@ -44,11 +45,19 @@ on init
     # make symlink for the tegra watchdog device
     symlink /dev/watchdog0 /dev/watchdog
 
+# GPS
+on post-fs-data
+    write /sys/class/gpio/export 61
+    write /sys/class/gpio/gpio61/direction out
+    write /sys/class/gpio/gpio61/value 0
+    chown root system /sys/class/gpio/gpio61/value
+    chmod 0664 /sys/class/gpio/gpio61/value
+    start start-gps
+
 # Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
 service watchdogd /sbin/watchdogd 10 110
     class core
     user root
-
 
 #read HWID then set appropriate property
 service check_cad_model /system/bin/check_cad_model.sh
