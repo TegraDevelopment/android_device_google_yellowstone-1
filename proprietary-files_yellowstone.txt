@@ -23,7 +23,7 @@ vendor/firmware/bcm43341/BCM43341NFCB0_002.001.009.0031.0059_Generic_PreI2C_NCD_
 # Sensor
 bin/sensorhubd
 bin/sh_updater
-lib/hw/sensors.tegra.so
+lib/sensors.tegra.so
 lib/libmplmpu.so
 lib/libsensors.base.so
 lib/libsensors.iio.lights.so
