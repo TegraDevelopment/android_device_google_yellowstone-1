@@ -13,11 +13,8 @@
 # limitations under the License.
 
 on init
-    # Create directory for mounting factory partition
-    mkdir /mnt 0666 system system
-    mkdir /mnt/factory 0666 system system
     # Touchscreen
-    mkdir /persist 0666 system system
+    mkdir /persist 0666 system system   
 
 on boot
    # Touchscreen
@@ -27,7 +24,6 @@ on boot
 # Touchscreen (Raydium)
 service rm-wrapper    /sbin/rm-wrapper
     setenv TOUCH_CONF_DIR /persist/touchscreen
-    setenv TOUCH_DATA_DIR /persist/touchscreen
+    setenv TOUCH_DATA_DIR /data/misc/touchscreen
     setenv LD_LIBRARY_PATH /sbin:/system/lib:/system/lib/hw
-    seclabel  u:r:recovery:s0
     disabled

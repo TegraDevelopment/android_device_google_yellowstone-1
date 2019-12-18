@@ -195,6 +195,45 @@ PRODUCT_PACKAGES += \
 TARGET_RECOVERY_DEVICE_MODULES += \
     rm-wrapper
 
+PRODUCT_COPY_FILES += \
+    $(OUT)/system/bin/linker:recovery/root/sbin/linker \
+    $(OUT)/system/bin/linker:recovery/root/system/bin/linker \
+    $(OUT)/system/lib/libc.so:recovery/root/system/lib/libc.so \
+    $(OUT)/system/lib/libdl.so:recovery/root/system/lib/libdl.so \
+    $(OUT)/system/lib/liblog.so:recovery/root/system/lib/liblog.so \
+    $(OUT)/system/lib/libm.so:recovery/root/system/lib/libm.so \
+    $(OUT)/system/lib/libc++.so:recovery/root/system/lib/libc++.so \
+    $(OUT)/system/lib/libstdc++.so:recovery/root/system/lib/libstdc++.so
+
+PRODUCT_COPY_FILES += \
+    vendor/google/yellowstone/proprietary/lib/hw/ts.default.so:recovery/root/system/lib/hw/ts.default.so \
+    vendor/google/yellowstone/proprietary/lib/librm31080.so:recovery/root/system/lib/librm31080.so \
+    vendor/google/yellowstone/proprietary/lib/librm_ts_service.so:recovery/root/system/lib/librm_ts_service.so\
+    vendor/google/yellowstone/proprietary/lib/para_10_02_00_10.so:recovery/root/system/lib/para_10_02_00_10.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_02_00_20.so:recovery/root/system/lib/para_10_02_00_20.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_02_00_b0.so:recovery/root/system/lib/para_10_02_00_b0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_03_00_10.so:recovery/root/system/lib/para_10_03_00_10.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_03_00_20.so:recovery/root/system/lib/para_10_03_00_20.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_03_00_b0.so:recovery/root/system/lib/para_10_03_00_b0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_04_00_10.so:recovery/root/system/lib/para_10_04_00_10.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_04_00_20.so:recovery/root/system/lib/para_10_04_00_20.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_04_00_b0.so:recovery/root/system/lib/para_10_04_00_b0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_04_00_c0.so:recovery/root/system/lib/para_10_04_00_c0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_05_00_c0.so:recovery/root/system/lib/para_10_05_00_c0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_06_00_b0.so:recovery/root/system/lib/para_10_06_00_b0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_07_00_b0.so:recovery/root/system/lib/para_10_07_00_b0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_08_00_10.so:recovery/root/system/lib/para_10_08_00_10.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_08_00_20.so:recovery/root/system/lib/para_10_08_00_20.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_08_00_b0.so:recovery/root/system/lib/para_10_08_00_b0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_09_00_c0.so:recovery/root/system/lib/para_10_09_00_c0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_09_01_c0.so:recovery/root/system/lib/para_10_09_01_c0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_09_02_c0.so:recovery/root/system/lib/para_10_09_02_c0.so \
+    vendor/google/yellowstone/proprietary/lib/para_10_0A_00_b0.so:recovery/root/system/lib/para_10_0A_00_b0.so \
+    vendor/google/yellowstone/proprietary/lib/para_12_01_00_a0.so:recovery/root/system/lib/para_12_01_00_a0.so \
+    vendor/google/yellowstone/proprietary/lib/para_12_01_01_a0.so:recovery/root/system/lib/para_12_01_01_a0.so \
+    vendor/google/yellowstone/proprietary/lib/para_12_01_02_a0.so:recovery/root/system/lib/para_12_01_02_a0.so \
+    vendor/google/yellowstone/proprietary/lib/para_12_01_03_a0.so:recovery/root/system/lib/para_12_01_03_a0.so
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
