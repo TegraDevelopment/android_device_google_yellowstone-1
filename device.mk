@@ -221,10 +221,6 @@ PRODUCT_PACKAGES += \
     libcutils_shim \
     libshim_zw
 
-# SmartDimmer
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sysfs
-
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
